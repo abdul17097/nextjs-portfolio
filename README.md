@@ -1,129 +1,36 @@
-# Abdul Musavir - Portfolio Website
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A modern, responsive portfolio website built with React, TypeScript, Tailwind CSS, and Framer Motion. Features a sleek dark theme with animated backgrounds, smooth transitions, and a professional layout showcasing experience, education, skills, and projects.
+## Getting Started
 
-## 🚀 Live Demo
+First, run the development server:
 
-[View Live Portfolio](https://preview--polished-code-folio.lovable.app/)
-
-## ✨ Features
-
-### Design & User Experience
-- **Modern Dark Theme** with animated gradient backgrounds
-- **Fully Responsive Design** that works seamlessly on all devices
-- **Smooth Animations** powered by Framer Motion
-- **Glass Morphism Effects** on cards and components
-- **Interactive Hover Effects** and transitions throughout
-
-### Professional Sections
-- **Hero Section** with animated background and introduction
-- **About Section** with professional summary
-- **Experience & Education Timeline** with detailed work history
-- **Skills Showcase** categorized by technology type
-- **Project Portfolio** with filterable tabs (All, Full Stack, Frontend, Backend)
-- **Contact Form** with social media integration
-- **Professional Footer** with navigation links
-
-## 🛠️ Technologies Used
-
-### Frontend Framework
-- **React 18** - Modern React with hooks
-- **TypeScript** - Type-safe development
-- **Vite** - Fast build tool and development server
-
-### Styling & UI
-- **Tailwind CSS** - Utility-first CSS framework
-- **Framer Motion** - Animation library for React
-- **Shadcn UI** - Modern component library
-- **Lucide React** - Beautiful icons
-- **React Icons** - Additional icon library
-
-### State Management & Routing
-- **React Router DOM** - Client-side routing
-- **TanStack React Query** - Server state management
-
-### Development Tools
-- **ESLint** - Code linting
-- **PostCSS** - CSS processing
-- **Class Variance Authority** - Component variant utilities
-
-## 📂 Project Structure
-
-```
-src/
-├── components/           # Reusable UI components
-│   ├── ui/              # Shadcn UI components
-│   ├── projects/        # Project-related components
-│   ├── Navigation.tsx   # Main navigation component
-│   ├── Header.tsx       # Hero section
-│   ├── About.tsx        # About section
-│   ├── Experience.tsx   # Experience & education
-│   ├── Skills.tsx       # Skills showcase
-│   ├── Projects.tsx     # Projects section
-│   ├── Contact.tsx      # Contact form
-│   └── Footer.tsx       # Footer component
-├── data/                # Static data files
-│   └── projectsData.ts  # Project information
-├── pages/               # Page components
-│   ├── Index.tsx        # Main portfolio page
-│   └── NotFound.tsx     # 404 page
-└── lib/                 # Utility functions
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## 🎨 Key Features
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Responsive Navigation
-- **Desktop**: Horizontal navigation with centered links
-- **Mobile**: Hamburger menu with smooth dropdown animation
-- **Logo**: "CodeCraft Studio" with gradient styling
-- **GitHub Button**: Direct link to profile with icon
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### Project Portfolio
-- **Filterable Tabs**: View projects by category
-- **Project Categories**:
-  - All Projects
-  - Full Stack Development
-  - Frontend Development
-  - Backend Development
-- **Interactive Cards** with hover effects and project details
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## 🚀 Getting Started
+## Learn More
 
-### Prerequisites
-- Node.js (version 16 or higher)
-- npm or yarn package manager
+To learn more about Next.js, take a look at the following resources:
 
-### Installation
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/abdulmusavir/portfolio
-   cd portfolio
-   ```
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+## Deploy on Vercel
 
-3. **Start development server**
-   ```bash
-   npm run dev
-   ```
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-4. **Build for production**
-   ```bash
-   npm run build
-   ```
-
-5. **Preview production build**
-   ```bash
-   npm run preview
-   ```
-
-## 📱 Responsive Breakpoints
-
-- **Mobile**: < 768px - Hamburger menu, single column layout
-- **Tablet**: 768px - 1024px - Responsive grid layouts
-- **Desktop**: > 1024px - Full navigation, multi-column layouts
-
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
