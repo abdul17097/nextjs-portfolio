@@ -90,7 +90,7 @@ const Experience = () => {
                   className="flex flex-col gap-3 relative border-l-2 border-yellow-600 pl-[2.5rem] py-8"
                 >
                   <div className="absolute top-0 left-[-.5rem] bg-yellow-600 w-4 h-4 rounded-full"></div>
-                  <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-lg p-6">
+                  <div className="bg-[#0d203d] rounded-lg p-6 hover:shadow-[#3f3f51] shadow-lg border border-slate-700/50 hover:border-yellow-500/50 transition-all duration-300">
                     <h4 className="text-yellow-400 text-xl font-semibold mb-2">
                       {exp.title}
                     </h4>
@@ -135,7 +135,7 @@ const Experience = () => {
                   className="flex flex-col gap-3 relative border-l-2 border-yellow-600 pl-[2.5rem] py-6"
                 >
                   <div className="absolute top-0 left-[-.5rem] bg-yellow-600 w-4 h-4 rounded-full"></div>
-                  <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-lg p-6">
+                  <div className="bg-[#0d203d] rounded-lg p-6 hover:shadow-[#3f3f51] shadow-lg border border-slate-700/50 hover:border-yellow-500/50 transition-all duration-300">
                     <h4 className="text-yellow-400 text-xl font-semibold mb-2">
                       {edu.degree}
                     </h4>
