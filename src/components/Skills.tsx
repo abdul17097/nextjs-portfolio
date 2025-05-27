@@ -98,45 +98,12 @@ const Skills = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Technical Skills
           </h2>
-          <p className="text-gray-300 text-base sm:text-lg">
-            Technologies I work with
+          <p className="text-gray-300 w-full max-w-[60%] text-center text-base sm:text-lg">
+            Here are some of my skills on which I have been working on for the
+            past few years.
           </p>
         </motion.div>
         <Tabs defaultValue="all" className="w-full">
-          {/* <div className="flex justify-center">
-            <TabsList className="grid w-[60%] items-center grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 mb-6 sm:mb-8 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl p-1">
-              <TabsTrigger
-                value="all"
-                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-yellow-500 data-[state=active]:to-orange-500 data-[state=active]:text-black font-medium transition-all duration-300 text-xs sm:text-sm"
-              >
-                All Skills
-              </TabsTrigger>
-              <TabsTrigger
-                value="frontend"
-                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-yellow-500 data-[state=active]:to-orange-500 data-[state=active]:text-black font-medium transition-all duration-300 text-xs sm:text-sm"
-              >
-                Frontend
-              </TabsTrigger>
-              <TabsTrigger
-                value="backend"
-                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-yellow-500 data-[state=active]:to-orange-500 data-[state=active]:text-black font-medium transition-all duration-300 text-xs sm:text-sm"
-              >
-                Backend
-              </TabsTrigger>
-              <TabsTrigger
-                value="database"
-                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-yellow-500 data-[state=active]:to-orange-500 data-[state=active]:text-black font-medium transition-all duration-300 text-xs sm:text-sm"
-              >
-                Database
-              </TabsTrigger>
-              <TabsTrigger
-                value="tools"
-                className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-yellow-500 data-[state=active]:to-orange-500 data-[state=active]:text-black font-medium transition-all duration-300 text-xs sm:text-sm"
-              >
-                Tools
-              </TabsTrigger>
-            </TabsList>
-          </div> */}
           <div className="flex justify-center px-4">
             <TabsList
               className="grid w-full md:w-[60%] max-w-6xl h-full grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 
@@ -172,7 +139,7 @@ const Skills = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4"
+                className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4"
               >
                 {skills.map((skill, index) => (
                   <motion.div
@@ -184,10 +151,10 @@ const Skills = () => {
                       delay: 0.1 * index,
                       ease: "easeInOut",
                     }}
-                    className="group flex flex-col items-center gap-4 md:gap-8 p-4 sm:p-5 bg-[#0d203d] backdrop-blur-sm border border-slate-700/50 rounded-xl hover:border-yellow-500/50 hover:shadow-[#3f3f51] shadow-lg  transition-all duration-300 cursor-pointer"
+                    className="group flex flex-col md:flex-row items-center gap-3 md:gap-5 p-4 pl-5  sm:p-3 sm:pl-8 bg-[#0d203d] backdrop-blur-sm border border-slate-700/50 rounded-xl hover:border-yellow-500/50 hover:shadow-[#3f3f51] shadow-lg  transition-all duration-300 cursor-pointer"
                   >
                     <skill.icon
-                      className={`text-[3rem] sm:text-[4rem] mr-3 sm:mr-4 ${skill.color} group-hover:scale-110 transition-transform duration-300`}
+                      className={`text-[3rem] sm:text-[3rem] ${skill.color} group-hover:scale-110 transition-transform duration-300`}
                     />
                     <span className="text-white font-medium text-sm sm:text-base group-hover:text-yellow-400 transition-colors duration-300">
                       {skill.name}
